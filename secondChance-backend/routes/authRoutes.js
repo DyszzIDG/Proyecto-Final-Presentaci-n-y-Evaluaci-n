@@ -3,7 +3,12 @@ const router = express.Router();
 
 router.post('/login', async (req, res) => {
     // Login logic
-    res.json({ token: "fake-jwt-token" });
+    res.json({
+        token: "fake-jwt-token",
+        userName: "John Doe",
+        userEmail: "user@example.com",
+        message: "Login successful"
+    });
 });
 
 router.post('/register', async (req, res) => {
